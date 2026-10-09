@@ -7,6 +7,7 @@ yarn-error.log
 .next/
 out/
 dist/
+tsconfig.tsbuildinfo
 
 # IDE/Editor specific
 .vscode/
@@ -39,3 +40,8 @@ db.sqlite
 /searxng
 
 certificates
+
+# Ruflo / claude-flow local state
+.claude-flow/
+.swarm/
+ruvector.db
