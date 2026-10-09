@@ -10,7 +10,14 @@ services:
       - HOSTNAME=0.0.0.0
     volumes:
       - data:/home/vane/data
+    networks:
+      - vane-net
     restart: unless-stopped
+
+networks:
+  # Shared with the standalone searxng container; create once with `docker network create vane-net`
+  vane-net:
+    external: true
 
 volumes:
   data:
